@@ -36,7 +36,7 @@ spec:
               topologyKey: kubernetes.io/hostname
       containers:
       - name: nginx-demo
-        image: docker pull gaciaga/nginx-vts
+        image: sophos/nginx-vts-exporter
         imagePullPolicy: Always
         resources:
           limits:
