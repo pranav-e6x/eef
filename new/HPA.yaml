@@ -11,15 +11,11 @@ spec:
   minReplicas: 2
   maxReplicas: 10
   metrics:
-  - type: Object
+  - type: Pods
     pods:
       metric:
         name: nginx_vts_server_requests_per_second
-      describedObject:
-        apiVersion: v1
-        kind: Service
-        name: kubernetes
       target:
-        type: Value
-        value: 4000m
+        type: AverageValue
+        averageValue: 4000m
       
