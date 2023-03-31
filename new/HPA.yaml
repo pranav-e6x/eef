@@ -1,11 +1,11 @@
-apiVersion: autoscaling/v2beta1
+apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:
   name: nginx-custom-hpa
   namespace: nginx
 spec:
   scaleTargetRef:
-    apiVersion: extensions/v1beta1
+    apiVersion: extensions/v1
     kind: Deployment
     name: nginx-deployment
   minReplicas: 2
