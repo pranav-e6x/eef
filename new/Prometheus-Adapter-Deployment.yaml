@@ -4,7 +4,7 @@ metadata:
   labels:
     app: custom-metrics-apiserver
   name: custom-metrics-apiserver
-  namespace: monitoring
+  namespace: monitoring1
 spec:
   replicas: 1
   selector:
@@ -16,7 +16,7 @@ spec:
         app: custom-metrics-apiserver
       name: custom-metrics-apiserver
     spec:
-      serviceAccountName: monitoring
+      serviceAccountName: monitoring1
       containers:
       - name: custom-metrics-apiserver
         image: quay.io/coreos/k8s-prometheus-adapter-amd64:v0.4.1
@@ -26,7 +26,7 @@ spec:
         - --tls-cert-file=/var/run/serving-cert/serving.crt
         - --tls-private-key-file=/var/run/serving-cert/serving.key
         - --logtostderr=true
-        - --prometheus-url=http://thanos-querier.monitoring:9090/
+        - --prometheus-url=http://thanos-querier.monitoring1:9090/
         - --metrics-relist-interval=30s
         - --v=10
         - --config=/etc/adapter/config.yaml
