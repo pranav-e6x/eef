@@ -36,7 +36,7 @@ spec:
               topologyKey: kubernetes.io/hostname
       containers:
       - name: nginx-demo
-        image: vaibhavthakur/nginx-vts:1.0
+        image: docker pull gaciaga/nginx-vts
         imagePullPolicy: Always
         resources:
           limits:
