@@ -11,7 +11,7 @@ spec:
   minReplicas: 2
   maxReplicas: 10
   metrics:
-  - type: Pods
+  - type: Object
     pods:
       metric:
         name: nginx_vts_server_requests_per_second
