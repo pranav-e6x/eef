@@ -36,7 +36,7 @@ spec:
               topologyKey: kubernetes.io/hostname
       containers:
       - name: nginx-demo
-        image: xcgd/nginx-vts:1.16.1-0.1.18
+        image: nginx:stable-alpine3.17-slim
         imagePullPolicy: Always
         resources:
           limits:
