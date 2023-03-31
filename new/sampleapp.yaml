@@ -36,7 +36,8 @@ spec:
               topologyKey: kubernetes.io/hostname
       containers:
       - name: nginx-demo
-        image: sophos/nginx-vts-exporter:latest
+        image: logo
+xcgd/nginx-vts:1.16.1-0.1.18
         imagePullPolicy: Always
         resources:
           limits:
