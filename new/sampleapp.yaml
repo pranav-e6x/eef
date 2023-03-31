@@ -3,7 +3,7 @@ kind: Namespace
 metadata:
   name: nginx1
 ---
-apiVersion: extensions/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   namespace: nginx1
