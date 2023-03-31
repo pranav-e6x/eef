@@ -15,3 +15,6 @@ spec:
     pods:
       metricName: nginx_vts_server_requests_per_second
       targetAverageValue: 4000m
+      target:
+        type: Value
+        value: 4000m  
